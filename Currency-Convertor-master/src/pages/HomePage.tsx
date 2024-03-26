@@ -43,7 +43,7 @@ const HomePage = () => {
                     Seamlessly Convert Currency
                 </h1>
                 <span className="text-xl">Is Just A Click Away!</span>
-                <SearchBar placeholder='Enter Your Value Here' onSubmit={handlerSearchSubmit} showSearchIcon={true} convertText='From' onChangeCurrency={(value) => handleFromCurrencyChange(value)} currencyType={fromCurrency} />
+                <SearchBar placeholder='Enter Your Value Here...' onSubmit={handlerSearchSubmit} showSearchIcon={true} convertText='From' onChangeCurrency={(value) => handleFromCurrencyChange(value)} currencyType={fromCurrency} />
                 <Separator />
                 <SearchBar placeholder='' onSubmit={handlerSearchSubmit} showSearchIcon={false} convertText='To' onChangeCurrency={(value) => handleToCurrencyChange(value)} currencyType={toCurrency} value={value} />
             </div>
