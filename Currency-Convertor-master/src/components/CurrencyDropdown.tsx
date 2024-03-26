@@ -29,7 +29,6 @@ const SORT_OPTIONS = [
 
 const CurrencyDropdown = ({ currency, onChange, convertText }: Props) => {
     const { currencies } = useGetAllCurrenciesModified();
-    console.log("currencies", currencies);
     
     const selectedCurrencyLabel = currencies?.find((option) => option.value === currency)?.label || SORT_OPTIONS[0].label;
 
